@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E098B80-3EE6-4CAE-8F9F-3EE20EA61D84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>salse.My.MyApplication</StartupObject>
+    <RootNamespace>salse</RootNamespace>
+    <AssemblyName>salse</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>salse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>salse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\fatorh.Designer.vb">
+      <DependentUpon>fatorh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fatorh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mordar.Designer.vb">
+      <DependentUpon>Mordar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mordar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\msup.Designer.vb">
+      <DependentUpon>msup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\msup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\order.Designer.vb">
+      <DependentUpon>order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\loge_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\loge_in.Designer.vb">
+      <DependentUpon>loge_in.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mcastmr.Designer.vb">
+      <DependentUpon>Mcastmr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mcastmr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mpro.Designer.vb">
+      <DependentUpon>Mpro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mpro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mprodect.Designer.vb">
+      <DependentUpon>Mprodect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mprodect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\reports.Designer.vb">
+      <DependentUpon>reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\upcastmr.Designer.vb">
+      <DependentUpon>upcastmr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\upcastmr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\uporder.Designer.vb">
+      <DependentUpon>uporder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\uporder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\uppro.Designer.vb">
+      <DependentUpon>uppro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\uppro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\upprodect.Designer.vb">
+      <DependentUpon>upprodect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\upprodect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\upsupplier.Designer.vb">
+      <DependentUpon>upsupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\upsupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rebort\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rebort\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rebort\mosh.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mosh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\fatorh.resx">
+      <DependentUpon>fatorh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mordar.resx">
+      <DependentUpon>Mordar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\msup.resx">
+      <DependentUpon>msup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\order.resx">
+      <DependentUpon>order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\loge_in.resx">
+      <DependentUpon>loge_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mcastmr.resx">
+      <DependentUpon>Mcastmr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mpro.resx">
+      <DependentUpon>Mpro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mprodect.resx">
+      <DependentUpon>Mprodect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\reports.resx">
+      <DependentUpon>reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\upcastmr.resx">
+      <DependentUpon>upcastmr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\uporder.resx">
+      <DependentUpon>uporder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\uppro.resx">
+      <DependentUpon>uppro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\upprodect.resx">
+      <DependentUpon>upprodect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\upsupplier.resx">
+      <DependentUpon>upsupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rebort\mosh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mosh.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nmfjf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kjfj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv.JPG" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
